@@ -12,11 +12,23 @@
   - 计算历史记录
 
 ## 项目结构
-- `main.cpp` - 主程序文件，包含计算器功能实现
+- `main.cpp` - 主程序入口
+- `Welcome.h/cpp` - 欢迎功能模块
+- `Calculator.h/cpp` - 计算器功能模块
+- `CMakeLists.txt` - CMake构建配置文件
 
 ## 编译方法
+使用CMake:
 ```bash
-g++ main.cpp -o calculator
+mkdir build
+cd build
+cmake ..
+make
+```
+
+或直接使用g++:
+```bash
+g++ -o calculator main.cpp Welcome.cpp Calculator.cpp
 ```
 
 ## 运行方法
